@@ -1,0 +1,240 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+  color: #333;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3 {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-out;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Hero Section with 3D Canvas */
+#hero {
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(45deg, rgba(0, 176, 255, 0.8), rgba(255, 125, 0, 0.8));
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+#hero .hero-content h1 {
+  font-size: 4rem;
+  color: white;
+  animation: fadeIn 2s ease-out;
+}
+
+#hero .hero-content p {
+  font-size: 1.6rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 12px 30px;
+  background-color: #00aaff;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 0 6px 18px rgba(0, 175, 255, 0.3);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff7d00;
+  transform: scale(1.1);
+  box-shadow: 0 10px 40px rgba(0, 175, 255, 0.5);
+}
+
+/* 3 Dots Menu */
+.three-dots-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.three-dots-menu .dot {
+  width: 30px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px auto;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+#sidebar {
+  position: fixed;
+  right: -250px;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  transition: right 0.3s ease;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sidebar ul li {
+  margin: 20px 0;
+}
+
+#sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#sidebar ul li a:hover {
+  color: #ff7d00;
+}
+
+#sidebar.active {
+  right: 0;
+}
+
+/* Canvas for 3D Interactive Animation */
+#threejs-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* About Section */
+#about {
+  padding: 80px 20px;
+  text-align: center;
+  background: #ffffff;
+  transition: background 0.5s ease;
+}
+
+#about:hover {
+  background: linear-gradient(120deg, #ff80e1, #00aaff);
+}
+
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+#about:hover p {
+  color: #222;
+}
+
+/* Projects Section */
+#projects {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+}
+
+.project-card {
+  background: white;
+  padding: 30px;
+  margin: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, rgba(0, 175, 255, 0.1), rgba(255, 125, 0, 0.1));
+  cursor: pointer;
+}
+
+.project-card h3 {
+  font-size: 1.8rem;
+  color: #00aaff;
+  transition: color 0.3s ease;
+}
+
+.project-card:hover h3 {
+  color: #ff7d00;
+}
+
+.project-card p {
+  font-size: 1.1rem;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.project-card:hover p {
+  color: #333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  #hero .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  #about h2 {
+    font-size: 2rem;
+  }
+
+  #projects .project-card {
+    margin: 15px;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bhavya Bansal Portfolio">
+  <title>Bhavya Bansal - CTO at Persist Ventures</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scrollmagic@2.0.7/scrollmagic/minified/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <!-- 3 Dots Menu Icon -->
+  <div class="three-dots-menu" id="menu-icon">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section with 3D Canvas -->
+  <header id="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm Bhavya Bansal</h1>
+      <p>CTO at Persist Ventures | Leading AI Innovations</p>
+      <a href="#about" class="cta-button">Discover My Work</a>
+    </div>
+    <canvas id="threejs-canvas"></canvas> <!-- 3D Canvas -->
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>As the CTO of Persist Ventures, I’ve been leading a diverse team, managing over 30 subsidiary companies, and working on groundbreaking AI solutions. I have been part of numerous initiatives that are redefining the AI landscape.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>My Key Projects</h2>
+      <div class="project-card" id="project1">
+        <h3>Persist Ventures</h3>
+        <p>Leading AI-driven innovations across 30+ subsidiary companies.</p>
+      </div>
+      <div class="project-card" id="project2">
+        <h3>Deficiency App</h3>
+        <p>Created an AI-powered app to improve productivity, available on Play Store and App Store.</p>
+      </div>
+      <div class="project-card" id="project3">
+        <h3>AI in Education</h3>
+        <p>Launching courses within schools to help students improve their productivity with AI.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>&copy; 2024 Bhavya Bansal | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
