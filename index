@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bhavya Bansal - Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>Bhavya Bansal</h1>
+            <p>CTO at Persist Ventures</p>
+        </header>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm Bhavya Bansal, and I serve as CTO at Persist Ventures. I have a strong background in AI, tech startups, and leadership.</p>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>I've been leading teams in the tech space for over a decade. Currently, I manage multiple subsidiaries at Persist Ventures, overseeing technical and strategic operations.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Notable Projects</h2>
+            <div class="project">
+                <h3>Deficiency App</h3>
+                <p>A groundbreaking app I developed to help people manage their health and wellness through AI-driven insights.</p>
+            </div>
+            <div class="project">
+                <h3>Sound of Meme</h3>
+                <p>A fun, viral platform I worked on that became quite popular within the meme and social media community.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/bhavyabansal" target="_blank">LinkedIn Profile</a></p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Bhavya Bansal</p>
+        </footer>
+    </body>
+</html>
